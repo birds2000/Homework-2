@@ -22,7 +22,8 @@ library(stringr)
 profs <- read.csv('profs.csv')
 #Create plot A
 ggplot(profs) + 
-  geom_histogram(aes(x = eval))
+  geom_histogram(aes(x = eval)) + 
+  xlim(1, 5)
 ```
 
 ### B.
@@ -44,7 +45,9 @@ ggplot(profs) +
 ```{r, echo = FALSE}
 #Create plot D
 ggplot(profs) + 
-  geom_point(aes(x = eval, y = beauty))
+  geom_point(aes(x = eval, y = beauty)) +
+  ylim(-2, 2)
+
 ```
 
 ## Question #2 
